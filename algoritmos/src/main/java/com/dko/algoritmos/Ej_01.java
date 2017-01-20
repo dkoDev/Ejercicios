@@ -16,7 +16,7 @@ public class Ej_01 {
 		// } catch (Exception e) {
 		// System.out.println(e.getMessage());
 		// }
-		e09();
+		e17();
 
 	}
 
@@ -174,5 +174,121 @@ public class Ej_01 {
 		}
 		
 	}
-	// public static void e0(){}
+	
+	public static void e10(){
+		//Write a program in C to display the pattern like right angle triangle with a number.
+		for (int i = 1; i <=10; i++) {
+			for (int j = 0; j < i; j++) {
+				System.out.print(j+1);
+				
+			}
+			System.out.println("");
+		}
+		
+	}
+	
+	public static void e11(){
+		//Write a program in C to make such a pattern like right angle triangle with a number which will repeat a number in a row
+		int n=4;
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j <=i; j++) {
+				System.out.print(i+1);
+			}
+			System.out.println("");
+		}
+		
+	}
+	public static void e12(){
+		//Write a program in C to make such a pattern like right angle triangle with number increased by 1
+		int aux=1;
+		for (int i = 1; i <=4; i++) {
+			for (int j = 0; j < i; j++) {
+				System.out.print(aux+" ");
+				aux++;
+			}
+			System.out.println("");
+		}
+		
+		
+	}
+	
+	public static void e13(){
+		//Write a program in C to make such a pattern like a pyramid with numbers increased by 1
+		int aux=1,n=4;
+		for (int i = 0; i < n ; i++) {
+			for (int j = 0; j < (n-i); j++) {
+				System.out.print(" ");
+			}
+			for (int j = 0; j <=i ; j++) {
+				System.out.print((aux++)+" ");
+			}
+			System.out.println("");
+		}
+		
+	}
+	
+	
+	public static void e14(){
+		//Write a program in C to make such a pattern like a pyramid with an asterisk
+		int n=20;
+		for (int i = 1; i <=n; i++) {
+			
+			for (int j=0;j<(n-i); j++) {
+				System.out.print(" ");				
+			}
+			
+			for (int k = 0; k <i ; k++) {
+				System.out.print("* ");
+			}
+			System.out.println("");
+		}
+	}
+	public static void e15(){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Ingrese un numero para calcular el factorial ");
+		int num=sc.nextInt();
+		int aux=1;
+		for (int i =0; i < num ; i++) {
+			
+			aux*=(i+1);
+			
+		}
+		
+		System.out.println("el valor es :"+aux);
+		sc.close();
+		
+		
+	}
+	public static void e16(){
+		//Write a program in C to display the n terms of even natural number and their sum
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Ingrese un numero");
+		int num=sc.nextInt();
+		int aux=0;
+		for(int i=1;i<=num;i++){
+			System.out.print((i*2)+" ");
+			aux=aux+(i*2);
+		}
+		System.out.println("");
+		System.out.println("La suma es: "+aux);
+		sc.close();
+	}
+	public static void e17(){
+		//Write a program in C to make such a pattern like a pyramid with a number which will repeat the number in the same row
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Ingrese un numero para a piramide");
+		int num=sc.nextInt();
+		for (int i = 1; i <= num; i++) {
+			for (int j = 0; j <= (num-i); j++) {
+				System.out.print(" ");
+			}
+			for (int j = 1; j <= i; j++) {
+				System.out.print(i+" ");
+			}
+			System.out.println("");
+		}
+		sc.close();
+		
+	}
+	 //public static void e0(){}
 }
